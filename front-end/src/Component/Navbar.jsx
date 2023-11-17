@@ -20,7 +20,7 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                  <span className="ml-52 font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl"><a href="/">Masuk</a></span>
+                  <span className="ml-50 font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl"><a href="/">Masuk</a></span>
                 </li>
 
                 <li>
