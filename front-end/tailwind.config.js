@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'milk-white': '#F6F4EB'
+        'milk-white': '#F6F4EB',
+        'soft-gray': '#ECDDCB',
+        'stone-gray': '#808080',
       },
       fontFamily: {
         'pop': ['Poppins','sans-serif'],
