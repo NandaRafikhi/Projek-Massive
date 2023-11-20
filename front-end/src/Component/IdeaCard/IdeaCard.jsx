@@ -6,3 +6,5 @@ export default function IdeaCard({imgSrc, ...props}) {
     </div>
   )
 }
+
+
