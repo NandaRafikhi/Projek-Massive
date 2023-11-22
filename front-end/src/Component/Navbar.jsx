@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Navbar = () => {
   return (
     <>
@@ -7,22 +9,20 @@ const Navbar = () => {
             <div>
               <ul className="flex items-center space-x-5" >
                 <li>
-                  <a className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" href="/">Beranda</a>
+                <Link className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" to="/">Beranda</Link>
                 </li>
                 <li>
-                  <a className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" href="/">Produk</a>
+                 <Link className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" to="/vstore/produk">Produk</Link>
                 </li>
                 <li>
-                  <a className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" href="/">Tentang</a>
+                <Link className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" to="/vstore/tentang">Tentang</Link>
                 </li>
                 <li>
-                  <a className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" href="/">Kontak</a>
+                <Link className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" to="/vstore/kontak">Kontak</Link>
                 </li>
-
                 <li>
                   <span className="ml-52 font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl"><a href="/">Masuk</a></span>
                 </li>
-
                 <li>
                   <a className="font-mons text-lg font-medium text-white bg-red-600 rounded px-4 py-0.5 hover:bg-red-800 hover:text-milk-white hover:shadow-xl" href="/">Daftar</a>
                 </li>
