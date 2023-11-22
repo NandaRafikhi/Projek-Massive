@@ -1,6 +1,7 @@
 import IdeaGroup from '../Component/IdeaCard/IdeaGroup'
 import Navbar from '../Component/Navbar'
 import ContohGroup from '../Component/Contoh/ContohGroup'
+import ReviewGroup from '../Component/Review/ReviewGroup'
 
 const Beranda = () => {
   return (
@@ -8,6 +9,7 @@ const Beranda = () => {
         <Navbar />
         <IdeaGroup />
         <ContohGroup />
+        <ReviewGroup/>
     </>
   )
 }
