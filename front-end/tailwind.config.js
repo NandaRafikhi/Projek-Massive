@@ -10,6 +10,8 @@ export default {
         'milk-white': '#F6F4EB',
         'soft-gray': '#ECDDCB',
         'stone-gray': '#808080',
+        'black-ash' : '#323742',
+        'black-abyss' : '#282828',
       },
       fontFamily: {
         'pop': ['Poppins','sans-serif'],
@@ -18,6 +20,8 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 }
 
