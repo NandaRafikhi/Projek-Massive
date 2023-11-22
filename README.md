@@ -1,3 +1,7 @@
 Project Massive IL
 
-**kalo direct didalam folder front-end, tolong ya**
+Install react pake Vite
+tailwind css
+
+npm i react-router-dom
+npm i react-icons
