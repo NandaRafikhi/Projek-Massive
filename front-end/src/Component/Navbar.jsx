@@ -11,20 +11,25 @@ const Navbar = () => {
                 <li>
                 <Link className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" to="/">Beranda</Link>
                 </li>
+
                 <li>
                  <Link className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" to="/vstore/produk">Produk</Link>
                 </li>
+
                 <li>
                 <Link className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" to="/vstore/tentang">Tentang</Link>
                 </li>
+
                 <li>
                 <Link className="font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl" to="/vstore/kontak">Kontak</Link>
                 </li>
+
                 <li>
-                  <span className="ml-52 font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl"><a href="/">Masuk</a></span>
+                  <span className="ml-52 font-mons text-lg font-medium hover:bg-red-600 hover:text-milk-white rounded px-3 py-0.5 hover:shadow-xl"><Link to="/vstore/masuk">Masuk</Link></span>
                 </li>
+
                 <li>
-                  <a className="font-mons text-lg font-medium text-white bg-red-600 rounded px-4 py-0.5 hover:bg-red-800 hover:text-milk-white hover:shadow-xl" href="/">Daftar</a>
+                  <Link to="/vstore/daftar" className="font-mons text-lg font-medium text-white bg-red-600 rounded px-4 py-0.5 hover:bg-red-800 hover:text-milk-white hover:shadow-xl">Daftar</Link>
                 </li>
               </ul>
             </div>
