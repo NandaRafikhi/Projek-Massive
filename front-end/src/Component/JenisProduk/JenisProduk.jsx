@@ -6,7 +6,7 @@ import Image4 from "../../../public/assets/produk/kaos3.png"
 
 export default function JenisGroup() {
     return(
-        <section className="bg-white">
+        <section className="bg-white pb-5">
         <div className="inline-flex items-center justify-center w-full">
                 <hr className=" w-11/12 h-0.5 my-8 bg-stone-gray border-0"/>
                 <span className="absolute px-3 font-bold font-inter text-2xl text-black bg-white">Jenis Produk</span>
