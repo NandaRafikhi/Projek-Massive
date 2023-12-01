@@ -76,7 +76,7 @@ const Masuk = () => {
                     <div className="flex justify-between mb-10 font-pop">
                       <div className=" flex flex-col">
                         <span className="text-left text-xs">Belum ada akun?</span>
-                        <Link className="text-left text-xs text-red-600" to="/daftar">daftar</Link>
+                        <Link className="text-left text-xs text-red-600" to="/vstore/daftar">daftar</Link>
                       </div>
                       <div className="text-right text-xs">
                           <a href="#">Lupa Password</a>
