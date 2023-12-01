@@ -6,8 +6,13 @@ import Image4 from "../../../public/assets/produk/kaos3.png"
 
 export default function JenisGroup() {
     return(
-       <main className=" my-9 flex items-center justify-center">
-        
+        <section className="bg-white">
+        <div className="inline-flex items-center justify-center w-full">
+                <hr className=" w-11/12 h-0.5 my-8 bg-stone-gray border-0"/>
+                <span className="absolute px-3 font-bold font-inter text-2xl text-black bg-white">Jenis Produk</span>
+            
+                </div>
+                <div className=" justify-center flex">
     
         
         <JenisCard imgSrc={Image1}>
@@ -56,8 +61,8 @@ export default function JenisGroup() {
 
 
 
-
-       </main>
+        </div>
+       </section>
       
        
     )    
