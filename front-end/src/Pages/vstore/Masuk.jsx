@@ -30,7 +30,7 @@ const Masuk = () => {
   return (
     <div>
         <Navbar/>
-        <section style={{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../../public/assets/masuk/img-login.png)",backgroundRepeat:"no-repeat", backgroundSize:"cover"}} className=" h-screen bg-slate-800/60 backdrop-brightness-90">
+        <section style={{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../../public/assets/masuk/bg-login-regis.png)",backgroundRepeat:"no-repeat", backgroundSize:"cover"}} className=" h-screen bg-slate-800/60 backdrop-brightness-90">
           <div className="flex flex-row justify-center items-center xl:mx-20 h-full">
             {/* Welcome */}
             <div className="flex flex-col justify-center items-center min-w-max">
