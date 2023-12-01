@@ -95,7 +95,7 @@ function Contact() {
               </div>
             </div>
             <div className="flex flex-col items-stretch w-[63%] ml-5 max-md:w-full max-md:ml-0">
-              <img src="../../public/assets/kontak/img-kontak.jpg" width="550" className="ml-32 mt-1" alt="" />
+              <img src="../../public/assets/kontak/img-kontak.jpg" width="550" className="ml-32 mt-1 rounded-xl shadow-2xl" alt="" />
             </div>
           </div>
         </div>

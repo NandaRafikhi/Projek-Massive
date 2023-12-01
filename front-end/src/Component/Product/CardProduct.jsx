@@ -1,4 +1,4 @@
-export default function JenisCard({ children, imgSrc, ... props}) {
+export default function CardProduct({ children, imgSrc, ... props}) {
     return(
         <div {... props} className="relative max-w-xs
         overflow-hidden rounded-2xl shadow-lg group  bg-milk-white items-center p-5 m-2"
