@@ -9,6 +9,7 @@ import Daftar from "./Pages/vstore/Daftar";
 import Desain from "./Pages/vstore/Desain";
 import User from "./Pages/vstore/User";
 import Edit from "./Pages/vstore/Edit";
+import Tampilan from "./Pages/vstore/Tampilan";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/vstore/desain" element={<Desain />} />
         <Route path="/vstore/user" element={<User />} />
         <Route path="/vstore/edit" element={<Edit />} />
+        <Route path="/vstore/tampilan" element={<Tampilan/>}/>
       </Routes>
     </Router>
   );
