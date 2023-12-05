@@ -1,9 +1,9 @@
 
 
 import React, { useState } from 'react';
-import Edit from '../../Pages/vstore/Edit';
 
-const edit = () => {
+
+const pengguna = () => {
   const [profileData, setProfileData] = useState({
    
   });
@@ -130,4 +130,4 @@ const edit = () => {
   );
 };
 
-export default Edit;
+export default pengguna;
