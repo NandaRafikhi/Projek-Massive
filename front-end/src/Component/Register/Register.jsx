@@ -32,7 +32,7 @@ function Register() {
               <div>
                 <input
                   type="text"
-                  className="text-sm font-pop font-normal whitespace-nowrap border bg-white self-stretch mt-1 pl-4 pr-16 py-2 rounded-lg border-solid border-zinc-400 items-start max-md:pr-5"
+                  className="text-sm font-pop font-normal whitespace-nowrap border bg-white self-stretch mt-1 pl-4 pr-52 py-2 rounded-lg border-solid border-zinc-400 items-start max-md:pr-5"
                   placeholder="Username atau email"
                 />
               </div>
@@ -66,8 +66,8 @@ function Register() {
               <div>
                 <input
                   type="password"
-                  className="text-sm font-pop font-light border bg-white self-stretch mt-1 pl-4 pr-1 py-2 rounded-lg border-solid border-zinc-400 items-start max-md:pr-10"
-                  placeholder="Kata sandi"
+                  className="text-sm font-pop font-light border bg-white self-stretch w-[396.8px] mt-1 pl-4 pr-1 py-2 rounded-lg border-solid border-zinc-400 items-start max-md:pr-52"
+                  placeholder="Kata sandi                       "
                 />
               </div>
               <div className="flex items-stretch gap-1 mr-2.5 mt-2.5 self-end">

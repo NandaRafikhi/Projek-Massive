@@ -5,7 +5,7 @@ import { RxDotFilled } from 'react-icons/rx';
 function CarouselAbout() {
   const slides = [
     {
-      url:"../../public/assets/carousel1.jpg"
+      url:"../../public/assets/carousel-about.jpg"
     },
     {
       url: '../../public/assets/carousel2.jpg',

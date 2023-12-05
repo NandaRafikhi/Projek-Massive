@@ -1,5 +1,5 @@
 import About from "../../Component/About/About";
-import Carousel from "../../Component/Carousel/Carousel";
+import CarouselAbout from "../../Component/Carousel/CarouselAbout";
 import Footer from "../../Component/Footer/Footer";
 import Navbar from "../../Component/Navbar/Navbar";
 
@@ -8,7 +8,7 @@ function Tentang() {
     <>
       <Navbar />
       <About/>
-      <Carousel/>
+      <CarouselAbout/>
       <Footer/>
     </>
   );
