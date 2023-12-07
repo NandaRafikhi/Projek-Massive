@@ -10,6 +10,7 @@ import Desain from "./Pages/vstore/Desain";
 import User from "./Pages/vstore/User";
 import Edit from "./Pages/vstore/Edit";
 import Tampilan from "./Pages/vstore/Tampilan";
+import Reset from "./Pages/vstore/Reset";
 
 const App = () => {
   return (
@@ -22,7 +23,7 @@ const App = () => {
         <Route path="/vstore/masuk" element={<Masuk />} />
         <Route path="/vstore/daftar" element={<Daftar />} />
         <Route path="/vstore/desain" element={<Desain />} />
-        <Route path="/vstore/user" element={<User />} />
+        <Route path="/vstore/User" element={<User />} />
         <Route path="/vstore/edit" element={<Edit />} />
         <Route path="/vstore/tampilan" element={<Tampilan/>}/>
       </Routes>
