@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 
-
 const pengguna = () => {
   const [profileData, setProfileData] = useState({
    
@@ -37,7 +36,7 @@ const pengguna = () => {
             value={profileData.username}
             onChange={handleChange}
           />
-            
+            <div className="mt-1 p-2 w-full bg-soft-gray  rounded-md">WilliamM123</div>
         </div>
         <div className="mb-4">
           <label htmlFor="fullName" className="block text-sm font-medium text-gray-600">
@@ -51,7 +50,7 @@ const pengguna = () => {
             onChange={handleChange}
             
           />
-          
+          <div className="mt-1 p-2 w-full bg-soft-gray  rounded-md">WilliamM123</div>
         </div>
         <div className="mb-4">
           <label htmlFor="alamat" className="block text-sm font-medium text-gray-600">
@@ -65,7 +64,7 @@ const pengguna = () => {
             onChange={handleChange}
             
           />
-          
+          <div className="mt-1 p-2 w-full bg-soft-gray  rounded-md">Tanggerang</div>
         </div>
         
         
@@ -73,7 +72,7 @@ const pengguna = () => {
           type="submit"
           className="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-white-600 focus:outline-none focus:ring focus:border-blue-300 ml-24"
         >
-          Simpan Data
+          Edit Data
         </button>
 
 
@@ -93,7 +92,7 @@ const pengguna = () => {
             onChange={handleChange}
             
           />
-          
+          <div className="mt-1 p-2 w-full bg-soft-gray  rounded-md">WilliamM Aja</div>
         </div>
         <div className="mb-4">
           <label htmlFor="fullName" className="block text-sm font-medium text-gray-600">
@@ -107,7 +106,7 @@ const pengguna = () => {
             onChange={handleChange}
             
           />
-          
+          <div className="mt-1 p-2 w-full bg-soft-gray  rounded-md">088-Nyambung kapan-kapan</div>
         </div>
         <div className="mb-4">
           <label htmlFor="alamat" className="block text-sm font-medium text-gray-600">
@@ -121,7 +120,7 @@ const pengguna = () => {
             onChange={handleChange}
             
           />
-          
+          <div className="mt-1 p-2 w-full bg-soft-gray  rounded-md">6969</div>
         </div>
       </form>
     </div>
