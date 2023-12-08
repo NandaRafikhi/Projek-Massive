@@ -5,11 +5,19 @@ import FrYellowTShirt from '../../../public/assets/desain/fr-yl-shirt.png'
 import FrRedTShirt from '../../../public/assets/desain/fr-rd-shirt.png'
 import { TShirt, Image, Scroll, FileArrowUp, TextT, WhatsappLogo } from "@phosphor-icons/react";
 import { Tab } from '@headlessui/react'
+import { useState } from 'react'
 
+const DesainTShirt = () => {
+  const black = FrTShirt
+  const white = FrWhiteTShirt
+  const red = FrRedTShirt
+  const yellow = FrYellowTShirt
+  const shirts = {black, white, red, yellow}
 
-const DesainTShirt = () => (
+  const [color, setColor] = useState(shirts.black)
   
-  <>
+  return (
+    <>
     <div className=' min-h-screen container mt-20 mx-auto'>
       <div className=' flex'>
       {/* menu */}
@@ -44,10 +52,10 @@ const DesainTShirt = () => (
         {/* shirt */}
         <div>
           <div>
-            <img src={FrTShirt} alt="" id='fr-tshirt' className='shadow-md rounded-2xl bg-slate-100 w-[467px] h-[594px]' />
-            <img src={FrWhiteTShirt} id='fr-wh-shirt' alt="" className='shadow-md rounded-2xl bg-slate-100 w-[467px] h-[594px]' style={{display:'none'}} />
+            <img src={color} alt="" id='fr-tshirt' className='shadow-md rounded-2xl bg-slate-100 w-[467px] h-[594px]' />
+            {/* <img src={FrWhiteTShirt} id='fr-wh-shirt' alt="" className='shadow-md rounded-2xl bg-slate-100 w-[467px] h-[594px]' style={{display:'none'}} />
             <img src={FrRedTShirt} id='fr-rd-shirt' alt="" className='shadow-md rounded-2xl bg-slate-100 w-[467px] h-[594px]' style={{display:'none'}} />
-            <img src={FrYellowTShirt} id='fr-yl-shirt' alt="" className='shadow-md rounded-2xl bg-slate-100 w-[467px] h-[594px]' style={{display:'none'}} />
+            <img src={FrYellowTShirt} id='fr-yl-shirt' alt="" className='shadow-md rounded-2xl bg-slate-100 w-[467px] h-[594px]' style={{display:'none'}} /> */}
           </div>
         </div>
         {/* Container */}
@@ -64,10 +72,10 @@ const DesainTShirt = () => (
                   <h1 className=' font-mons text-lg font-semibold'>Kaos H&M</h1>
                   <span className='font-mons text-sm font-medium text-gray-400'>By Visual Store</span>
                   <div className=' mt-8 mb-5 flex space-x-2'>
-                    <button onClick={{}} className="border bg-black flex w-5 h-5 border-solid border-black hover:border-blue-600"></button>
-                    <button onClick={{}} className="border bg-white flex w-5 h-5 border-solid border-black hover:border-blue-600"></button>
-                    <button onClick={{}} className="border bg-[#C5271A] flex w-5 h-5 border-solid border-black hover:border-blue-600"></button>
-                    <button onClick={{}} className="border bg-[#E9C243] flex w-5 h-5 border-solid border-black hover:border-blue-600"></button>
+                    <button onClick={()=>setColor(shirts.black)} className="border bg-black flex w-5 h-5 border-solid border-black hover:border-blue-600"></button>
+                    <button onClick={()=>setColor(shirts.white)} className="border bg-white flex w-5 h-5 border-solid border-black hover:border-blue-600"></button>
+                    <button onClick={()=>setColor(shirts.red)} className="border bg-[#C5271A] flex w-5 h-5 border-solid border-black hover:border-blue-600"></button>
+                    <button onClick={()=>setColor(shirts.yellow)} className="border bg-[#E9C243] flex w-5 h-5 border-solid border-black hover:border-blue-600"></button>
                   </div>
                   <button className='mb-8 p-2 bg-black-abyss text-white font-mons font-medium text-xs hover:bg-black-ash'>Change Product</button>
                   <h2 className=' font-mons font-bold text-sm text-gray-400'>Sizes</h2>
@@ -182,6 +190,8 @@ const DesainTShirt = () => (
       </div>
     </div>
   </>
-)
+
+  )
+}
 
 export default DesainTShirt
