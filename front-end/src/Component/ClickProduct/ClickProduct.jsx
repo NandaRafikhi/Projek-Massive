@@ -1,33 +1,40 @@
-import React from "react";
-import { Link } from "react-router-dom"
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import FrTShirt from "../../../public/assets/desain/fr-tshirt.png";
+import FrWhiteTShirt from "../../../public/assets/desain/fr-wh-shirt.png";
+import FrYellowTShirt from "../../../public/assets/desain/fr-yl-shirt.png";
+import FrRedTShirt from "../../../public/assets/desain/fr-rd-shirt.png";
 
-function ClickProduct() {
+const ClickProduct = () => {
+  const black = FrTShirt;
+  const white = FrWhiteTShirt;
+  const red = FrRedTShirt;
+  const yellow = FrYellowTShirt;
+  const shirts = { black, white, red, yellow };
+
+  const [color, setColor] = useState(shirts.black);
+
   return (
     <div className="bg-white flex flex-col">
       <div className="self-center w-full max-w-[1310px] mt-24 max-md:max-w-full max-md:mt-10">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
           <div className="flex flex-col items-stretch w-[42%] max-md:w-full max-md:ml-0">
-            <div className="flex grow flex-col items-stretch max-md:max-w-full max-md:mt-8">
+            <div
+              id="warna-baju"
+              className="flex grow flex-col items-stretch max-md:max-w-full max-md:mt-8"
+            >
               <img
-                src="../../public/assets/produk/tampilan-product.png"
+                src={color}
                 className="aspect-[1.11] object-contain object-center w-full overflow-hidden max-md:max-w-full"
               />
-              <div className="self-center flex w-[291px] max-w-full items-stretch justify-between gap-5 mt-7 px-px">
-                <img
-                  src="../../public/assets/produk/tampilan-product.png"
-                  className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
-                />
-                <img
-                  src="../../public/assets/produk/tampilan-product.png"
-                  className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
-                />
-              </div>
-            </div>
-            <div className="flex-col">
-              <div className="flex flex-col px-5 ">
-                <div className="text-neutral-400 text-2xl self-center font-bold ">Stok</div>
-                <div className="text-neutral-400 text-2xl font-medium self-center whitespace-nowrap mt-3">
-                  35
+              <div className="flex-col mt-5">
+                <div className="flex flex-col px-5 ">
+                  <div className="text-neutral-400 text-2xl self-center font-bold ">
+                    Stok
+                  </div>
+                  <div className="text-neutral-400 text-2xl font-medium self-center whitespace-nowrap mt-3">
+                    35
+                  </div>
                 </div>
               </div>
             </div>
@@ -51,10 +58,22 @@ function ClickProduct() {
                   Warna
                 </div>
                 <div className="flex items-stretch justify-between gap-3.5 mt-5 pr-20 max-md:pr-5">
-                  <div className="border-[3px] bg-black flex w-[33px] rounded-md border-solid border-black hover:border-blue-600" />
-                  <div className="border-[3px] bg-white flex w-[33px] rounded-md border-solid border-black hover:border-blue-600" />
-                  <div className="border-[3px] bg-red-700 flex w-[33px] rounded-md border-solid border-black hover:border-blue-600" />
-                  <div className="border-[3px] bg-amber-300 flex w-[33px] shrink-0 h-[33px] flex-col rounded-md border-solid border-black hover:border-blue-600" />
+                  <button
+                    onClick={() => setColor(shirts.black)}
+                    className="border-[3px] bg-black flex w-[33px] rounded-md border-solid border-black hover:border-blue-600"
+                  />
+                  <button
+                    onClick={() => setColor(shirts.white)}
+                    className="border-[3px] bg-white flex w-[33px] rounded-md border-solid border-black hover:border-blue-600"
+                  />
+                  <button
+                    onClick={() => setColor(shirts.red)}
+                    className="border-[3px] bg-red-700 flex w-[33px] rounded-md border-solid border-black hover:border-blue-600"
+                  />
+                  <button
+                    onClick={() => setColor(shirts.yellow)}
+                    className="border-[3px] bg-amber-300 flex w-[33px] shrink-0 h-[33px] flex-col rounded-md border-solid border-black hover:border-blue-600"
+                  />
                 </div>
                 <div className="text-neutral-400 text-2xl font-bold whitespace-nowrap mt-8">
                   Ukuran
@@ -88,9 +107,10 @@ function ClickProduct() {
                 </div>
               </div>
               <Link to="/vstore/desain">
-              <div className="text-white text-sm font-mons font-bold whitespace-nowrap bg-red-700 w-[289px] max-w-full justify-center mt-8 px-[64px] py-4 rounded-xl self-start items-start max-md:px-5">
-                Mulai Desain Sekarang
-              </div> </Link>
+                <div className="text-white text-sm font-mons font-bold whitespace-nowrap bg-red-700 w-[289px] max-w-full justify-center mt-8 px-[64px] py-4 rounded-xl self-start items-start max-md:px-5">
+                  Mulai Desain Sekarang
+                </div>{" "}
+              </Link>
               <div className="justify-center text-neutral-400 text-justify text-2xl font-medium mt-9 max-md:max-w-full">
                 Mau bertanya lebih lanjut silahkan hubungi customer service kami
                 melalui WA Chat <br />
@@ -101,16 +121,17 @@ function ClickProduct() {
         </div>
       </div>
       <div className="self-center flex w-[632px] max-w-full justify-between gap-5 mt-11 items-start max-md:flex-wrap max-md:mt-10">
-      <a href="https://wa.me/6281348502626">
-        <div className="bg-green-500 flex items-stretch gap-2.5 mt-1.5 ml-64 pl-2.5 pr-8 py-1 rounded-md max-md:pr-5">
-          <img
-            src="../../public/logo/Icon-wa-color.svg"
-            className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
-          />
-          <div className="text-white text-sm font-bold self-center grow whitespace-nowrap my-auto">
-            Chat Sekarang (WhatsApp)
-          </div>
-        </div> </a>
+        <a href="https://wa.me/6281348502626">
+          <div className="bg-green-500 flex items-stretch gap-2.5 mt-1.5 ml-64 pl-2.5 pr-8 py-1 rounded-md max-md:pr-5">
+            <img
+              src="../../public/logo/Icon-wa-color.svg"
+              className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
+            />
+            <div className="text-white text-sm font-bold self-center grow whitespace-nowrap my-auto">
+              Chat Sekarang (WhatsApp)
+            </div>
+          </div>{" "}
+        </a>
       </div>
       <div className="text-black text-center text-2xl font-bold self-center whitespace-nowrap mt-24 max-md:mt-10">
         Panduan Ukuran
@@ -124,14 +145,14 @@ function ClickProduct() {
       </div>
       <div className="self-center w-full max-w-[1301px] mt-16 px-5 max-md:max-w-full max-md:mt-10">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-        <div className="flex flex-col items-stretch w-[26%] ml-5 max-md:w-full max-md:ml-0">
+          <div className="flex flex-col items-stretch w-[26%] ml-5 max-md:w-full max-md:ml-0">
             <div className="flex flex-col items-stretch mt-2">
               <img
                 src="../../public/assets/produk/tampilan-produk-1.png"
                 className="aspect-square object-contain object-center w-full overflow-hidden"
               />
               <div className="text-black text-center text-2xl font-bold self-center whitespace-nowrap mt-7">
-              Cotton Combed 24s
+                Cotton Combed 24s
               </div>
             </div>
           </div>
@@ -142,7 +163,7 @@ function ClickProduct() {
                 className="aspect-square object-contain object-center w-full overflow-hidden"
               />
               <div className="text-black text-center text-2xl font-bold self-center whitespace-nowrap mt-7">
-              Cotton 30s
+                Cotton 30s
               </div>
             </div>
           </div>
@@ -174,6 +195,5 @@ function ClickProduct() {
       </div>
     </div>
   );
-}
-
+};
 export default ClickProduct;
