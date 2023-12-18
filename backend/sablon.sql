@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 11, 2023 at 05:46 PM
+-- Generation Time: Dec 18, 2023 at 05:00 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -24,15 +24,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `barang`
+-- Table structure for table `barangs`
 --
 
-CREATE TABLE `barang` (
+CREATE TABLE `barangs` (
   `ID_barang` int(11) NOT NULL,
   `nama_barang` varchar(255) NOT NULL,
   `Stok` int(11) NOT NULL,
-  `Deskripsi` text NOT NULL
+  `Jenis_Bahan` text NOT NULL,
+  `Warna` varchar(255) NOT NULL,
+  `Ukuran` varchar(255) NOT NULL,
+  `Harga` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `barangs`
+--
+
+INSERT INTO `barangs` (`ID_barang`, `nama_barang`, `Stok`, `Jenis_Bahan`, `Warna`, `Ukuran`, `Harga`) VALUES
+(1, 'as', 221, 'asajj', 'asas', 'xl', 10000),
+(2, 'sdfq', 20, '30 catton', 'merah', 'XL', 35000);
 
 -- --------------------------------------------------------
 
@@ -55,16 +66,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`ID_User`, `Email`, `Username`, `Katasandi`, `No_telp`, `createdAt`, `updatedAt`) VALUES
-(1, 'test@example.com', 'testuser', 'password123', 123456789, '2023-12-11 14:51:16', '2023-12-11 14:51:16');
+(1, 'test@example.com', 'testuser', 'password123', 123456789, '2023-12-11 14:51:16', '2023-12-11 14:51:16'),
+(2, 'test@example.com', 'testuser', 'password123', 123456789, '2023-12-12 07:50:25', '2023-12-12 07:50:25'),
+(3, 'test1@example.com', 'testuser1', 'password1234', 12345678, '2023-12-12 07:50:52', '2023-12-12 07:50:52');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `barang`
+-- Indexes for table `barangs`
 --
-ALTER TABLE `barang`
+ALTER TABLE `barangs`
   ADD PRIMARY KEY (`ID_barang`);
 
 --
@@ -78,16 +91,16 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `barang`
+-- AUTO_INCREMENT for table `barangs`
 --
-ALTER TABLE `barang`
-  MODIFY `ID_barang` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `barangs`
+  MODIFY `ID_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID_User` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID_User` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
