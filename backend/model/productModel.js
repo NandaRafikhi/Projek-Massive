@@ -16,10 +16,22 @@ const barang = sequelize.define('barang', {
     type: DataTypes.INTEGER,
     allowNull: false
   },
-    Deskripsi: {
-    type: DataTypes.TEXT,
+    Jenis_Bahan: {
+    type: DataTypes.STRING,
     allowNull: false
-  }
+  },
+  Warna: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  Ukuran: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  Harga: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
 });
 
 module.exports = barang;

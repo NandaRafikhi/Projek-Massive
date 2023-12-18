@@ -1,5 +1,6 @@
 const express = require('express'); 
 const bodyParser = require('body-parser');
+const producRouter = require('./routers/producRouter');
 const userRouter = require('./routers/userRouter');
 
 const app = express(); 
@@ -9,6 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true }));
 
 app.use('/api/user', userRouter);
+app.use('/api/product', producRouter);
 
 
 app.listen(PORT, (error) =>{ 
